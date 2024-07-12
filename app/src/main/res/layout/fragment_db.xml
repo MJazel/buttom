@@ -37,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/inMatricula"
                 android:inputType="number"
-                android:hint="2021030262"/>
+                android:hint="Matricula"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -47,7 +47,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/inNombre"
-                android:hint="Nombre"/>
+                android:hint="Paterno, Materno, Nombres"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -57,7 +57,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/inDomicilio"
-                android:hint="Calle # Colonia CP"/>
+                android:hint="Calle #, Colonia, CP"/>
 
             <TextView
                 android:layout_width="match_parent"
