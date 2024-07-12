@@ -6,5 +6,6 @@
         android:icon="@drawable/baseline_search_24"
         android:title="Buscar estudiante"
         app:actionViewClass="androidx.appcompat.widget.SearchView"
+        android:hint="Buscar Alumno"
         app:showAsAction="ifRoom|collapseActionView" />
 </menu>
