@@ -14,6 +14,6 @@
         android:title="Datos"/>
     <item
         android:id="@+id/btnAcerca"
-        android:icon="@drawable/baseline_data_exploration_24"
+        android:icon="@drawable/baseline_group_24"
         android:title="Datos Almacenados"/>
 </menu>

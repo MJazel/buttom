@@ -10,6 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@android:color/white"
         android:orientation="vertical">
 
         <!-- Toolbar -->
@@ -17,10 +18,9 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:titleTextColor="@color/miColor"
-            app:subtitleTextColor="@color/miColor"
-            app:title="Filtrar alumnos"
-            android:background="@color/header"/>
+            app:titleTextColor="@color/black"
+            app:title="Lista de Alumnos"
+            android:gravity="center"/>
 
         <!-- Content area with padding -->
         <LinearLayout
@@ -29,14 +29,12 @@
             android:orientation="vertical"
             android:padding="20dp">
 
-
-
             <!-- ListView -->
             <ListView
                 android:id="@+id/lstAlumnos"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_marginBottom="140sp"
+                android:layout_marginBottom="12sp"
                 android:layout_weight="1"/>
         </LinearLayout>
     </LinearLayout>

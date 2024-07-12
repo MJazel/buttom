@@ -9,6 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@android:color/white"
         android:orientation="vertical"
         android:padding="20dp">
 
@@ -17,10 +18,9 @@
             android:layout_height="wrap_content"
             android:text="@string/sfrmDb"
             android:textSize="25sp"
-            android:textColor="@color/white"
+            android:textColor="@color/onSecondaryColor"
             android:padding="10dp"
-            android:gravity="center"
-            android:background="@color/miColor"/>
+            android:gravity="center"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -66,19 +66,21 @@
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@mipmap/foto"
+                android:src="@drawable/alumnodata"
                 android:layout_gravity="center"
                 android:id="@+id/imgAlumno"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Seleccionar Foto"
+                android:text="Foto"
                 android:layout_gravity="center"
                 android:id="@+id/btnSubirFoto"
                 android:textColor="@color/black"
+                android:backgroundTint="@color/button"
                 android:onClick="onUploadPhotoClicked"/>
 
             <TextView
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Especialidad"/>
@@ -86,13 +88,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/inEspecialidad"
-                android:hint="Grado, licenciatura o Ing."/>
+                android:hint="Grado, licenciatura o Ing."
+                android:layout_marginBottom="10dp"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Guardar"
                 android:id="@+id/btnGuardar"
-
+                android:backgroundTint="@color/button"
                 android:textColor="@color/black"
                 />
             <TableLayout
@@ -106,9 +109,9 @@
                         android:layout_height="wrap_content"
                         android:text="Buscar"
                         android:id="@+id/btnBuscar"
-                        android:background="@drawable/button_ripple"
                         android:textColor="@color/black"
                         android:layout_margin="5dp"
+                        android:backgroundTint="@color/button"
                         android:layout_weight="1"/>
                     <Button
                         android:layout_width="0dp"
@@ -116,9 +119,9 @@
                         android:text="Borrar"
                         android:id="@+id/btnBorrar"
                         android:textColor="@color/black"
-                        android:background="@drawable/button_ripple"
                         android:enabled="false"
                         android:layout_margin="5dp"
+                        android:backgroundTint="@color/button_red"
                         android:layout_weight="1"/>
                 </TableRow>
             </TableLayout>

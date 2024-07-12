@@ -1,11 +1,10 @@
 package com.example.appmenubutton
 
 import ListFragment
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
-import android.text.Html
-import android.text.method.LinkMovementMethod
-import android.widget.TextView
-import android.widget.Toast
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -50,7 +49,6 @@ class MainActivity : AppCompatActivity() {
                 R.id.btnDb -> {
                     val dbFragment = DbFragment()
                     changeFrame(dbFragment)
-//                    dbFragment.clearInputs()
                     true
                 }
                 R.id.btnAcerca -> {
@@ -67,4 +65,34 @@ class MainActivity : AppCompatActivity() {
     fun changeFrame(fragment: Fragment) {
         supportFragmentManager.beginTransaction().replace(R.id.frmContenedor, fragment).commit()
     }
+
+    // Métodos para abrir los enlaces
+    fun openFacebook(view: View) {
+        val url = "https://www.facebook.com/merari.urias"
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse(url)
+        startActivity(intent)
+    }
+
+    fun openTwitter(view: View) {
+        val url = "https://x.com/JazelMerari"
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse(url)
+        startActivity(intent)
+    }
+
+    fun openInstagram(view: View) {
+        val url = "https://www.instagram.com/m_jazel9/"
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse(url)
+        startActivity(intent)
+    }
+
+    fun openLinkedIn(view: View) {
+        val url = "https://www.linkedin.com/in/merari-jazel-osuna-bueno-014659308/"
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse(url)
+        startActivity(intent)
+    }
 }
+
